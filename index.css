@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.nav {
+  width: 95%;
+  height: 5vh;
+  margin-left: 2.5%;
+  margin-top: 10px;
+  border: #000 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.web-name {
+  margin-left: 50px;
+}
+
+.nav-ul {
+  display: flex;
+  margin-right: 50px;
+  gap: 30px;
+}
+
+li a {
+  color: #000;
+}
+
+li a:focus {
+  color: blue;
+}
+
+.with-border {
+  border-left: blue solid 1px;
+  border-right: blue solid 1px;
+  padding: 0 10px 0 10px;
+}
+
+.date {
+  float: right;
+  margin-right: 2.5%;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.parent-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#book-section {
+  width: 95%;
+  border: #000 solid 2px;
+}
+
+.book {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+
+.book:nth-child(odd) {
+  background-color: aqua;
+}
+
+.remove-button {
+  width: 100px;
+  height: 30px;
+  border: #000 solid 1px;
+  border-radius: 10px;
+}
+
+hr {
+  margin: 30px 0 30px 0;
+  width: 200px;
+}
+
+.Add-book,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 35%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+#add-btn {
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 5vh;
+  border: #000 solid 1px;
+}
+
+.copyright {
+  text-align: center;
+  margin-left: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact ul li {
+  list-style-type: disc;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .web-name {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .nav-ul {
+    margin-right: 0;
+  }
+
+  .nav-ul li {
+    display: block;
+    font-size: 12px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
